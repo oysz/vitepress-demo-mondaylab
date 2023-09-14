@@ -4,7 +4,7 @@ layout: home
 home: true
 
 # https://vitepress.dev/reference/default-theme-home-page
-title: 周一的博客
+title: JJW的博客
 titleTemplate: Hi，终于等到你
 editLink: true
 lastUpdated: true
