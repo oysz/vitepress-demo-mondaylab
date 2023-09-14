@@ -10,7 +10,7 @@ editLink: true
 lastUpdated: true
 
 hero:
-    name: 周一同学
+    name: OYSZ
     text: Stay foolish, Stay hungry.
     tagline: /斜杠青年/人间清醒/工具控/
     image:
@@ -26,7 +26,7 @@ hero:
 features:
   - icon: 🤹‍♀️
     title: Web前端
-    details: 大厂程序媛，国内某互联网厂搬砖。
+    details: 小厂程序员，国内某互联网厂搬砖。
     link: /column/views/guide
   - icon: 👩‍🎨‍
     title: 喜欢美学
