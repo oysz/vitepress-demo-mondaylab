@@ -5,6 +5,7 @@ import { sidebar } from './relaConf';
 export default defineConfig({
   title: "JJW的个人博客",
   description: "A VitePress Site",
+  base: '/vitepress-demo-mondaylab/', // 这里将会影响之后生成的根路径
   themeConfig: {
     logo: '/vue-color-avatar.png',
     // https://vitepress.dev/reference/default-theme-config
