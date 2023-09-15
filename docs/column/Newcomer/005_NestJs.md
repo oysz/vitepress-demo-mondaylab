@@ -234,7 +234,8 @@ bootstrap();
 
 ```
 
-打开[http://localhost:3000/api-docs-json](http://localhost:3000/api-docs-json)，将json文件另存到本地，再导入postman就可以啦。
+打开本地的api-docs-json文件，将json文件另存到本地，再导入postman就可以啦。
+<!-- 打开[http://localhost:3000/api-docs-json](http://localhost:3000/api-docs-json)，将json文件另存到本地，再导入postman就可以啦。 -->
 这里另外附上postman的快速上手教程：
 
 > [https://blog.csdn.net/fxbin123/article/details/80428216?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165233374216781667894361%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165233374216781667894361&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-80428216-null-null.142^v9^pc_search_result_control_group,157^v4^new_style&utm_term=postman&spm=1018.2226.3001.4187](https://blog.csdn.net/fxbin123/article/details/80428216?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165233374216781667894361%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165233374216781667894361&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-80428216-null-null.142^v9^pc_search_result_control_group,157^v4^new_style&utm_term=postman&spm=1018.2226.3001.4187)
