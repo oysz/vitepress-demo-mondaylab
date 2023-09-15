@@ -1,0 +1,1 @@
+import{_ as a,o as e,c as t,N as i}from"./chunks/framework.35e562b8.js";const f=JSON.parse('{"title":"环境及开发工具配置","description":"","frontmatter":{},"headers":[],"relativePath":"column/Newcomer/index.md"}'),r={name:"column/Newcomer/index.md"},o=i("",85),n=[o];function l(p,s,m,c,d,h){return e(),t("div",null,n)}const b=a(r,[["render",l]]);export{f as __pageData,b as default};

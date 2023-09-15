@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as e,N as n}from"./chunks/framework.35e562b8.js";const m=JSON.parse('{"title":"NestJs","description":"","frontmatter":{},"headers":[],"relativePath":"column/Newcomer/005_NestJs.md"}'),l={name:"column/Newcomer/005_NestJs.md"},o=n("",53),p=[o];function t(r,c,i,d,u,C){return a(),e("div",null,p)}const g=s(l,[["render",t]]);export{m as __pageData,g as default};
