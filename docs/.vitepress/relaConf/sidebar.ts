@@ -27,5 +27,54 @@ export const sidebar: DefaultTheme.Sidebar = {
         }
       ]
     }
+  ],
+  '/column/Growing/': [
+    {
+      text: '所思·所想',
+      items: [
+        {
+          text: '所思·所想',
+          link: '/column/Growing/'
+        }
+      ]
+    }
+  ],
+  '/column/Newcomer/': [
+    {
+      text: '前端新人手摸手教程',
+      items: [
+        {
+          text: 'Pinia 快速上手指南',
+          link: '/column/Newcomer/001_Pinia.md'
+        },
+        {
+          text: 'Git常用命令',
+          link: '/column/Newcomer/002_Git.md'
+        },
+        {
+          text: 'Vue-Router快速上手指南',
+          link: '/column/Newcomer/003_Vue-Router.md'
+        },
+        {
+          text: 'Electron快速上手指南',
+          link: '/column/Newcomer/004_Electron.md'
+        },
+        {
+          text: 'NestJs快速上手指南',
+          link: '/column/Newcomer/005_NestJs.md'
+        },
+      ]
+    }
+  ],
+  '/column/Travel/': [
+    {
+      text: '大江南北游记',
+      items: [
+        {
+          text: '大江南北游记',
+          link: '/column/Travel/'
+        }
+      ]
+    }
   ]
 };

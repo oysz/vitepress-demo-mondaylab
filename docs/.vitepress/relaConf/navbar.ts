@@ -24,6 +24,10 @@ export const nav: DefaultTheme.NavItem[] = [
       {
         text: '数据结构与算法',
         link: '/column/Algorithm/'
+      },
+      {
+        text: '前端新人手摸手教程',
+        link: '/column/Newcomer/'
       }
     ]
   },
