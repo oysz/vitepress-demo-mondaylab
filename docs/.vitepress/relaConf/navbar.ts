@@ -28,6 +28,10 @@ export const nav: DefaultTheme.NavItem[] = [
       {
         text: '前端新人手摸手教程',
         link: '/column/Newcomer/'
+      },
+      {
+        text: 'PMP信息系统项目管理师',
+        link: '/column/PMP/'
       }
     ]
   },
