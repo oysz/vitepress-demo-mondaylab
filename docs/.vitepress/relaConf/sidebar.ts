@@ -76,5 +76,16 @@ export const sidebar: DefaultTheme.Sidebar = {
         }
       ]
     }
+  ],
+  '/column/PMP/': [
+    {
+      text: 'PMP信息系统项目管理师',
+      items: [
+        {
+          text: '十大知识领域',
+          link: '/column/PMP/'
+        }
+      ]
+    }
   ]
 };
