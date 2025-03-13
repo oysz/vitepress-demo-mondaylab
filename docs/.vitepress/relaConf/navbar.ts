@@ -8,14 +8,22 @@ export const nav: DefaultTheme.NavItem[] = [
   {
     text: '个人成长',
     items: [
-      {
-        text: '大江南北游记',
-        link: '/column/Travel/'
-      },
+      // {
+      //   text: '大江南北游记',
+      //   link: '/column/Travel/'
+      // },
       {
         text: '所思·所想',
         link: '/column/Growing/'
-      }
+      },
+      {
+        text: 'Electron跨端相关',
+        link: '/column/Electron/'
+      },
+      {
+        text: '货架陈列运营',
+        link: '/column/Draggable/'
+      },
     ]
   },
   {
@@ -32,6 +40,14 @@ export const nav: DefaultTheme.NavItem[] = [
       {
         text: 'PMP信息系统项目管理师',
         link: '/column/PMP/'
+      },
+      {
+        text: 'CSS基础',
+        link: '/column/CSS/'
+      },
+      {
+        text: 'React相关',
+        link: '/column/React/'
       }
     ]
   },
@@ -41,16 +57,16 @@ export const nav: DefaultTheme.NavItem[] = [
       { text: 'Github', link: 'https://github.com/oysz' },
       {
         text: '掘金',
-        link: 'https://juejin.cn/user/3131845139247960/posts'
+        link: 'https://juejin.cn/user/567817594733224'
       },
-      {
-        text: '飞书社区',
-        link: 'https://pzfqk98jn1.feishu.cn/wiki/space/7193915595975491587?ccm_open_type=lark_wiki_spaceLink'
-      },
-      {
-        text: '知乎',
-        link: 'https://www.zhihu.com/people/zheng-zi-ji-67-89/posts'
-      }
+      // {
+      //   text: '飞书社区',
+      //   link: 'https://pzfqk98jn1.feishu.cn/wiki/space/7193915595975491587?ccm_open_type=lark_wiki_spaceLink'
+      // },
+      // {
+      //   text: '知乎',
+      //   link: 'https://www.zhihu.com/people/zheng-zi-ji-67-89/posts'
+      // }
     ]
   }
 ];

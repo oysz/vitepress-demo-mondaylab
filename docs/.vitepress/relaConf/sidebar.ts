@@ -33,7 +33,7 @@ export const sidebar: DefaultTheme.Sidebar = {
       text: '所思·所想',
       items: [
         {
-          text: '所思·所想',
+          text: 'React 入门思考',
           link: '/column/Growing/'
         }
       ]
