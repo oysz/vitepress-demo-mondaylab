@@ -256,46 +256,46 @@ Electron 的主进程（Main Process）和渲染进程（Renderer Process）是�
 #### 1. **职责与功能**
 
 - **主进程**  
-  - **唯一性**：每个 Electron 应用有且仅有一个主进程[1,2,4](@ref)。
-  - **核心管理**：负责应用的生命周期（启动、退出等）、创建/管理窗口（通过 `BrowserWindow`）、与操作系统交互（如文件系统、菜单栏、对话框等）[1,2,4](@ref)。
-  - **系统级操作**：可以访问 Node.js 和 Electron 的所有 API，执行底层任务（如网络请求、加密数据操作）[2,6,7](@ref)。
+  - **唯一性**：每个 Electron 应用有且仅有一个主进程。
+  - **核心管理**：负责应用的生命周期（启动、退出等）、创建/管理窗口（通过 `BrowserWindow`）、与操作系统交互（如文件系统、菜单栏、对话框等）。
+  - **系统级操作**：可以访问 Node.js 和 Electron 的所有 API，执行底层任务（如网络请求、加密数据操作）。
 
 - **渲染进程**  
-  - **多实例性**：每个窗口对应一个独立的渲染进程[1,2,4](@ref)。
-  - **界面展示**：负责渲染网页内容（HTML/CSS/JavaScript），处理用户交互（如按钮点击、表单输入）[1,2,4](@ref)。
-  - **限制性**：默认无法直接访问 Node.js API（需通过预加载脚本或配置 `nodeIntegration`）[2,5,7](@ref)。
+  - **多实例性**：每个窗口对应一个独立的渲染进程。
+  - **界面展示**：负责渲染网页内容（HTML/CSS/JavaScript），处理用户交互（如按钮点击、表单输入）。
+  - **限制性**：默认无法直接访问 Node.js API（需通过预加载脚本或配置 `nodeIntegration`）。
 
 ---
 
 #### 2. **运行环境**
 
 - **主进程**  
-  - 运行在 **Node.js 环境**中，支持所有 Node.js 模块（如 `fs`、`path`）[1,6,7](@ref)。
-  - 可以通过 `ipcMain` 模块监听来自渲染进程的消息[2,3,9](@ref)。
+  - 运行在 **Node.js 环境**中，支持所有 Node.js 模块（如 `fs`、`path`）。
+  - 可以通过 `ipcMain` 模块监听来自渲染进程的消息。
 
 - **渲染进程**  
-  - 运行在 **Chromium 浏览器环境**中，支持 Web API（如 DOM 操作、Fetch API）[1,7,9](@ref)。
-  - 通过 `ipcRenderer` 模块向主进程发送消息[2,3,7](@ref)。
+  - 运行在 **Chromium 浏览器环境**中，支持 Web API（如 DOM 操作、Fetch API）。
+  - 通过 `ipcRenderer` 模块向主进程发送消息。
 
 ---
 
 #### 3. **通信机制**
 
 - **进程间通信（IPC）**  
-  - **主进程 → 渲染进程**：通过 `BrowserWindow.webContents.send()` 发送消息[2,7,9](@ref)。
-  - **渲染进程 → 主进程**：通过 `ipcRenderer.send()` 发送消息，主进程通过 `ipcMain.on()` 监听[2,3,9](@ref)。
-  - **预加载脚本（Preload Script）**：在渲染进程中桥接 Node.js 功能，通过 `contextBridge.exposeInMainWorld()` 安全暴露 API[5,7,9](@ref)。
+  - **主进程 → 渲染进程**：通过 `BrowserWindow.webContents.send()` 发送消息。
+  - **渲染进程 → 主进程**：通过 `ipcRenderer.send()` 发送消息，主进程通过 `ipcMain.on()` 监听。
+  - **预加载脚本（Preload Script）**：在渲染进程中桥接 Node.js 功能，通过 `contextBridge.exposeInMainWorld()` 安全暴露 API。
 
 ---
 
 #### 4. **安全性与隔离**
 
 - **主进程**  
-  - 可执行敏感操作（如文件读写、系统命令），需避免直接暴露给用户界面[2,4,7](@ref)。
+  - 可执行敏感操作（如文件读写、系统命令），需避免直接暴露给用户界面。
 
 - **渲染进程**  
-  - 默认启用 **上下文隔离（Context Isolation）**，防止渲染进程直接访问 Node.js 全局对象[5,7,9](@ref)。
-  - 通过预加载脚本限制可访问的 API，避免安全漏洞[5,7,9](@ref)。
+  - 默认启用 **上下文隔离（Context Isolation）**，防止渲染进程直接访问 Node.js 全局对象。
+  - 通过预加载脚本限制可访问的 API，避免安全漏洞。
 
 ---
 
@@ -303,7 +303,7 @@ Electron 的主进程（Main Process）和渲染进程（Renderer Process）是�
 
 - **主进程**  
 
-  - 创建窗口、注册全局快捷键、处理系统托盘图标[1,2,7](@ref)。
+  - 创建窗口、注册全局快捷键、处理系统托盘图标。
 
   - 示例代码：
 
@@ -332,7 +332,7 @@ Electron 的主进程（Main Process）和渲染进程（Renderer Process）是�
 
 #### 总结
 
-主进程是 Electron 应用的“大脑”，负责全局管理和系统交互；渲染进程则是“界面引擎”，专注用户交互和内容展示。两者通过 IPC 实现松耦合通信，同时通过安全机制（如预加载脚本）平衡功能与安全性[1,2,7,9](@ref)。
+主进程是 Electron 应用的“大脑”，负责全局管理和系统交互；渲染进程则是“界面引擎”，专注用户交互和内容展示。两者通过 IPC 实现松耦合通信，同时通过安全机制（如预加载脚本）平衡功能与安全性。
 
 ### 4.Electron 进程间通信与更新机制详解
 
@@ -340,7 +340,7 @@ Electron 的主进程（Main Process）和渲染进程（Renderer Process）是�
 
 #### 1. 基础通信模块
 
-Electron 通过 `ipcMain`（主进程）和 `ipcRenderer`（渲染进程）模块实现进程间通信，支持单向和双向消息传递[1,2](@ref)。
+Electron 通过 `ipcMain`（主进程）和 `ipcRenderer`（渲染进程）模块实现进程间通信，支持单向和双向消息传递。
 
 #### （1）渲染进程 → 主进程
 
