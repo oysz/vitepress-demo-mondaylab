@@ -27,7 +27,7 @@ features:
   - icon: 🤹‍♀️
     title: Web前端
     details: 前端程序员，南京某厂搬砖ing。
-    link: /column/views/guide
+    # link: /column/views/guide
   - icon: 👩‍🎨‍
     title: 喜欢美学
     details: 热爱一切美学，喜欢用各种设计工具造图。
